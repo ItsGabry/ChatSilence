@@ -1,0 +1,25 @@
+name: ChatSilence
+author: ItsGabry
+main: ItsGabry\ChatSilence\Main
+api: 3.9.3
+version: 1.0
+
+
+commands:
+ silence:
+  description: Active the silence
+  usage: "/silence"
+  permission: silence.command
+ unsilence:
+  usage: "/unsilence"
+  permission: unsilence.command
+permissions:
+ silence.command:
+  description: "Allows players to active the silence"
+  default: op
+ unsilence.command:
+  description: "Allows players to disable the silence"
+  default: op
+ silence.bypass:
+  description: "Allow players to be able to send message when the silence is active"
+  default: op
